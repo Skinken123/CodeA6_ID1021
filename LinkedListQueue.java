@@ -47,4 +47,17 @@ public class LinkedListQueue{
 
         return current.item;
     }
+
+    /*
+     * Prints the entire queue from the first element in the queue to the last
+     */
+    public void printQ(){
+        Node current = head;
+        while(current != null){
+            System.out.print(current.item + " \n");
+            current = current.next;
+        }
+        System.out.print("\n");
+        return;
+    }
 }
